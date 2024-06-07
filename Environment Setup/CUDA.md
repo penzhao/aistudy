@@ -4,6 +4,8 @@
 
 CUDA (Compute Unified Device Architecture) is a parallel computing platform and programming model developed by NVIDIA for general computing on its own GPUs (Graphics Processing Units). Setting up CUDA can significantly speed up the performance of AI and deep learning applications. This guide will walk you through the steps to install and configure CUDA on Ubuntu 22.04.
 
+Note: This wiki has been verified on GeForce RTX 4090 and GeForce GTX 1080 Ti.
+
 ## Table of Contents
 
 - [Install Driver](#install-driver)
@@ -21,7 +23,7 @@ CUDA (Compute Unified Device Architecture) is a parallel computing platform and 
     ```bash
     sudo apt install nvidia-driver-535
     ```
-- GeForce GTX 1090 Ti
+- GeForce GTX 1080 Ti
     ```bash
     sudo apt install nvidia-driver-470
     ```
