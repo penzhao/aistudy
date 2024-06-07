@@ -28,7 +28,7 @@ CUDA (Compute Unified Device Architecture) is a parallel computing platform and 
 - [NVIDIA CUDA GPUs list](https://developer.nvidia.com/cuda-gpus)
 
 ## Download CUDA Toolkit
-Go to the [NVIDIA CUDA Toolkit download page](https://developer.nvidia.com/cuda-downloads), and download the `runfile (local)` installer package for Ubuntu 22.04, do not use `deb (local)` installer, because it very easy install the wrong version.
+Go to the [NVIDIA CUDA Toolkit download page](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local), and download the `runfile (local)` installer package for Ubuntu 22.04, do not use `deb (local)` installer, because it very easy install the wrong version.
 
 This step only needs to be performed once, as the installer is a large file.
 - **[12.5](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local)**
