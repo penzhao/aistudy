@@ -29,13 +29,18 @@ Ensure you have the correct NVIDIA driver installed for your GPU model. Note tha
     sudo apt install nvidia-driver-470
     ```
 ## Download CUDA Toolkit
-Go to the [NVIDIA CUDA Toolkit download page](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local), and download the `runfile (local)` installer package for Ubuntu 22.04, do not use `deb (local)` installer, because it very easy install the wrong version.
+Go to the [NVIDIA CUDA Toolkit download page](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local), and download the `runfile (local)` installer package for Ubuntu 22.04, do not use `deb (local)` installer, because it very easy install the wrong version, and even worse, it can mess up the currently installed GPU driver.
 
 This step only needs to be performed once, as the installer is a large file.
 - **[12.5](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local)**
     ```
     wget https://developer.download.nvidia.com/compute/cuda/12.5.0/local_installers/cuda_12.5.0_555.42.02_linux.run
     ```
+- **[11.8](https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local)**
+    ```
+    wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
+    ```
+
 - **[11.7](https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local)**
     ```
     wget https://developer.download.nvidia.com/compute/cuda/11.7.0/local_installers/cuda_11.7.0_515.43.04_linux.run
@@ -53,13 +58,13 @@ This step only needs to be performed once, as the installer is a large file.
         ```bash
         sudo sh cuda_12.5.0_555.42.02_linux.run
         ```
-    - **11.7**:
-        ```
-        sudo sh cuda_11.7.0_515.43.04_linux.run
-        ```
     - **11.8**
         ```
         Sudo sh cuda_11.8.0_520.61.05_linux.run
+        ```
+    - **11.7**:
+        ```
+        sudo sh cuda_11.7.0_515.43.04_linux.run
         ```
 1. **Follow the prompts to complete the installation.** to complete the installation. Please be aware that it may take a considerable amount of time for these instructions to appear, so your patience is appreciated. When prompted, type `accept` to agree to the license agreement and then select the components you wish to install.
 
