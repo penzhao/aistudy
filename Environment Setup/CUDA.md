@@ -4,7 +4,7 @@
 
 CUDA (Compute Unified Device Architecture) is a parallel computing platform and programming model developed by NVIDIA for general computing on its own GPUs (Graphics Processing Units). Setting up CUDA can significantly speed up the performance of AI and deep learning applications. This guide will walk you through the steps to install and configure CUDA on Ubuntu 22.04.
 
-Note: This wiki has been verified on GeForce RTX 4090 and GeForce GTX 1080 Ti.
+Note: This wiki has been verified on **GeForce RTX 4090** and **GeForce GTX 1080 Ti**. You may find the  [NVIDIA CUDA GPUs list](https://developer.nvidia.com/cuda-gpus) helpful for checking compatibility with other GPU models.
 
 ## Table of Contents
 
@@ -17,7 +17,8 @@ Note: This wiki has been verified on GeForce RTX 4090 and GeForce GTX 1080 Ti.
 - [Resources](#resources)
 - [Optional Information](#optional-information)
 
-## Install Driver
+## Install NVIDIA Driver
+Ensure you have the correct NVIDIA driver installed for your GPU model. Note that the driver provided on the [NVIDIA Driver Downloads](https://www.nvidia.com/Download/index.aspx) page might not be compatible with CUDA. Therefore, it is recommended to follow the steps below for installing the driver:
 
 - GeForce RTX 4090
     ```bash
@@ -27,8 +28,6 @@ Note: This wiki has been verified on GeForce RTX 4090 and GeForce GTX 1080 Ti.
     ```bash
     sudo apt install nvidia-driver-470
     ```
-- [NVIDIA CUDA GPUs list](https://developer.nvidia.com/cuda-gpus)
-
 ## Download CUDA Toolkit
 Go to the [NVIDIA CUDA Toolkit download page](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=runfile_local), and download the `runfile (local)` installer package for Ubuntu 22.04, do not use `deb (local)` installer, because it very easy install the wrong version.
 
