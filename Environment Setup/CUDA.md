@@ -130,7 +130,6 @@ After selecting the desired CUDA version, you can verify that the change was suc
 
     This command should display the version of the CUDA toolkit that is currently active.
     ```bash
-    (base) aistudy@AIStudy:~$ nvcc --version
     nvcc: NVIDIA (R) Cuda compiler driver
     Copyright (c) 2005-2022 NVIDIA Corporation
     Built on Tue_May__3_18:49:52_PDT_2022
@@ -145,7 +144,6 @@ After selecting the desired CUDA version, you can verify that the change was suc
 
     <mark>Important</mark> The `CUDA Version` displayed by `nvidia-smi` is tied to the installed NVIDIA driver and does not change when you switch between different CUDA toolkit installations. To ensure you are using the correct CUDA version for your applications, update your environment variables and verify the active CUDA version with `nvcc --version`.
     ```
-    (base) aistudy@AIStudy:~$ nvidia-smi
     Thu Jun  6 16:14:47 2024       
     +---------------------------------------------------------------------------------------+
     | NVIDIA-SMI 535.171.04             Driver Version: 535.171.04   CUDA Version: 12.2     |

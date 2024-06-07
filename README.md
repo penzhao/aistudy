@@ -88,9 +88,9 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 
 If you have any questions, suggestions, or want to join the discussion, feel free to reach out:
 
-- **Email**: aistudy@example.com
+- **Email**: pezhao@live.com
 - **GitHub Issues**: Open an issue in this repository
-- **Discord**: Join our [Discord server](https://discord.gg/example)
+- **Discord**: Join our [Discord server](https://discord.gg/aistudy)
 
 Happy learning and collaborating!
 
